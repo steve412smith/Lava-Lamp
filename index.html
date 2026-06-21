@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#06110d" />
+  <meta name="description" content="A portable procedural sensory lava lamp for Android and desktop." />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <title>Lava Drift</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="field" aria-label="Animated lava drift visual field"></canvas>
+
+  <main class="panel" id="panel">
+    <header class="panel-header">
+      <div>
+        <h1>Lava Drift</h1>
+        <p id="modeHint">Procedural sensory flow</p>
+      </div>
+      <button id="hideUi" class="icon-button" aria-label="Hide controls">✕</button>
+    </header>
+
+    <section class="presets" aria-label="Scene presets">
+      <button data-preset="ocean">Ocean</button>
+      <button data-preset="forest">Forest</button>
+      <button data-preset="aurora">Aurora</button>
+      <button data-preset="ember">Ember</button>
+      <button data-preset="night">Night</button>
+      <button data-preset="focus">Focus</button>
+    </section>
+
+    <section class="controls" aria-label="Controls">
+      <label>Calm ↔ Energy <input id="energy" type="range" min="0" max="100" value="38" /></label>
+      <label>Density <input id="density" type="range" min="20" max="180" value="90" /></label>
+      <label>Glow <input id="glow" type="range" min="0" max="100" value="70" /></label>
+      <label>Coherence <input id="coherence" type="range" min="0" max="100" value="72" /></label>
+    </section>
+
+    <footer class="actions">
+      <button id="randomize">Randomize</button>
+      <button id="pause">Pause</button>
+      <button id="install" hidden>Install</button>
+    </footer>
+  </main>
+
+  <button id="showUi" class="floating-button" hidden>Controls</button>
+
+  <script src="app.js"></script>
+</body>
+</html>
