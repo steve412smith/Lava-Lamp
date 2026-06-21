@@ -1,40 +1,13 @@
-# Lava Drift
+# Lava Drift v2.1
 
-A portable procedural sensory lava lamp / flow-field PWA designed for Android Chrome and desktop browsers.
+GitHub Pages-ready PWA. This update retunes the simulation based on first testing feedback.
 
-## Install on Android
+## Changes in v2.1
+- Calm is now genuinely slow instead of still being fast.
+- Density now maps from sparse to moderate rather than instantly crowded.
+- Glow is capped and nonlinear so it should not blow out to a white screen.
+- Coherence now visibly changes the motion from independent wandering to organized river/swirl behavior.
+- Randomize now chooses calmer defaults.
 
-1. Publish this folder with GitHub Pages.
-2. Open the GitHub Pages URL in Chrome on Android.
-3. Tap the Chrome menu and choose **Install app** or **Add to Home screen**.
-
-## GitHub Pages setup
-
-Repository **Settings → Pages**:
-
-- Source: Deploy from a branch
-- Branch: main
-- Folder: / root
-
-## Updating
-
-Upload/replace these files in the repository root:
-
-- index.html
-- style.css
-- app.js
-- manifest.json
-- service-worker.js
-- icon.svg
-- README.md
-
-If the old version sticks on Android, open the app once while online, close it, then reopen. The service worker cache version is `lava-drift-v2.0.0`.
-
-## Version 2 highlights
-
-- Mobile-first PWA
-- Offline support
-- Presets: Ocean, Forest, Aurora, Ember, Night, Focus
-- Sliders for energy, density, glow, and coherence
-- Touch interaction
-- Soft bloom and particle/metaball-style rendering
+## Install / update
+Upload these root files to your GitHub repository and overwrite the old files. GitHub Pages should update within a few minutes. If your phone still shows the old version, clear site data or add `?v=21` to the URL once.
